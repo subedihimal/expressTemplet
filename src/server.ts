@@ -4,7 +4,7 @@ import pingRouter from "./routers/ping.router";
 
 const app = express();
 const PORT = serverConfig.PORT;
-app.use(pingRouter);
+app.use('/ping',pingRouter);
 
 
 app.listen(PORT, ()=>{
