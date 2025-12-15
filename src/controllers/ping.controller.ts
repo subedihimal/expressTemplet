@@ -1,7 +1,9 @@
 import {Request, Response, NextFunction} from "express"
+import logger from "../config/logger.config";
 
 
 export const pingHandler = (req: Request,res: Response)=>{
+    logger.info("Ping Request Recieved")
     res.status(200).json({
         message: "Server Working Fine",
         success: "true"
