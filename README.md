@@ -9,6 +9,6 @@ RESTful
 
 ️Custom error handling
 
-Validation with Zod
+Zod for Validation
 
-Logging with Winston
+Winston For Logging
