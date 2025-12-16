@@ -1,10 +1,26 @@
-🚀 Express and Typescript Boilerplate/Tenplet
-    That follows Modular - Layered Architecture
+🚀 Express and Typescript Boilerplate/Template  
+That follows Modular - Layered Architecture
 
-Includes:
+## Includes:
+- Nodemon
+- RESTful APIs
+- Custom error handling
+- Validation with Zod
+- Logging with Winston
 
-Nodemon
-RESTful
-️Custom error handling
-Validation with Zod
-Logging with Winston
+## 🛠️ Steps to set up the starter template
+
+- Clone the project  
+  `git clone  https://github.com/subedihimal/expressTemplet.git <ProjectName>`
+  
+- Move into the project folder  
+  `cd <ProjectName>`
+
+- Install npm dependencies  
+  `npm install`
+
+- Create a new `.env` file in the root directory and add the `PORT` environment variable  
+  `PORT=3000`
+
+- Start the Express server  
+  `npm run dev`
