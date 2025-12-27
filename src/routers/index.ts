@@ -3,7 +3,7 @@ import pingRouter from "./ping.router";
 
 const app = express();
 
-app.use('/ping', pingRouter);
+app.use('/', pingRouter);
 
 
 export default app;
