@@ -1,9 +1,9 @@
 import express from "express";
 import { serverConfig } from "./config/index";
-import pingRouter from "./routers/ping.router";
 import { genericErrorHandler } from "./middleware/error.middleware";
 import logger from './config/logger.config'
 import { attachCoorelationMiddleware } from "./middleware/correlation.middleware";
+import router from "./routers"
 
 const app = express();
 const PORT = serverConfig.PORT;
@@ -16,7 +16,7 @@ app.use(attachCoorelationMiddleware);
 
 //Routes
 //Expects JSON Body and Query Params
-app.use('/ping',pingRouter);
+app.use('/api',router);;
 
 //Custom Error Handling Middleware
 app.use(genericErrorHandler);
